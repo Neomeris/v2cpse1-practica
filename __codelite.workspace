@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="example code" Database="">
+  <Project Name="assignment2.2" Path="assignment2.2/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="assignment2.2" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="assignment2.3" Path="assignment2.3/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="assignment2.3" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="assignment2.3v2" Path="assignment2.3v2/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="assignment2.3v2" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="assignment2.4" Path="assignment2.4/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="assignment2.4" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="assignment2.5" Path="assignment2.5/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="assignment2.5" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="w1-demo" Path="w1-demo/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="w1-demo" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="w1-demo - kopie (2)" Path="w1-demo - kopie (2)/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="w1-demo - kopie (2)" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="w1-native" Path="w1-native/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="w1-native" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="w2" Path="w2/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="w2" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="w2-asm-print" Path="w2-asm-print/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="w2-asm-print" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+</CodeLite_Workspace>
