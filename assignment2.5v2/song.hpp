@@ -1,0 +1,1 @@
+void play( note_player & p );

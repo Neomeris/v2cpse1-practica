@@ -1,0 +1,30 @@
+#############################################################################
+#
+# Project Makefile
+#
+# (c) Wouter van Ooijen (www.voti.nl) 2016
+#
+# This file is in the public domain.
+# 
+#############################################################################
+
+# source files in this project (main.cpp is automatically assumed)
+SOURCES := 
+
+# header files in this project
+HEADERS := note_player.hpp note.hpp
+
+# other places to look for files for this project
+SEARCH  := 
+
+build: song.cpp
+song.cpp: Makefile native.exe
+	native Toccata:d=32,o=6,b=90:16d,d#.,f.,d.,d#.,f.,d.,d#.,f.,d.,16d#,16f,f#.,g#.,f.,f#.,g#.,f.,f#.,g#.,f.,16f#,16g#,a#.,b.,g#.,a#.,b.,g#.,a#.,b.,16g#,2a#,16a#,g#.,b.,f.,g#.,b.,f.,f#.,a#.,d#.,f#.,a#.,d#.,f.,g#.,d.,f.,g#.,d.,d#.,f#.,c.,d#.,16f#,16c,16c#,16f,16a#5,16c#,16f,16a#5,16c,16d#,16g#5,16c,16d#,16g#5,16a#5,16c#,16f#5,16a#5,16c#,16f#5,16g#5,16b5,16f5,16g#5,16b5,16f5,16f#5,16a#5,16d#5,16f#5,16a#5,16d#5,16f5,16g#5,16d5,16f5,16g#5,16d.5,4d#.5 > song.cpp
+
+native.exe: rtttl_player.cpp note_printer.cpp
+	g++ -std=c++17 rtttl_player.cpp note_printer.cpp -o native.exe
+
+# set REATIVE to the next higher directory 
+# and defer to the Makefile.due there
+RELATIVE := $(RELATIVE)../
+include $(RELATIVE)Makefile.due
