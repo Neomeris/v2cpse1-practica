@@ -8,21 +8,24 @@
 # 
 #############################################################################
 
+build: song.hpp
+
+song.hpp: native.exe
+	native.exe > song.hpp
+
+native.exe: rtttl_string_converter.cpp note_printer.o
+	g++ rtttl_string_converter.cpp -o native.exe
+	
+note_printer.o: note_printer.cpp ../w1-library/note_player.hpp
+
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := 
+SOURCES := note_printer.cpp
 
 # header files in this project
-HEADERS := 
+HEADERS := note_printer.hpp song.hpp
 
 # other places to look for files for this project
 SEARCH  := ../w1-library
-
-build: song.cpp
-song.cpp: Makefile native.exe
-	native.exe > song.cpp
-
-native.exe: rtttl_string_converter.cpp note_printer.cpp note_player.hpp
-	g++ rtttl_string_converter.cpp note_printer.cpp -o native.exe
 
 # set REATIVE to the next higher directory 
 # and defer to the Makefile.due there

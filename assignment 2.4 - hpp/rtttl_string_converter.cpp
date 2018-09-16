@@ -13,7 +13,7 @@ void rtttl_convert_string( const char *s ){
    int state = 0;
    char def;
    bool dot;
-   COUT << "#pragma once\n\n#include \"melody.hpp\"\n\nclass song : public melody {\npublic:\n\t void play(note_player & p) {\n";
+   COUT << "#include \"note_printer.hpp\"\nclass song{\n\tpublic:\n\tvoid play(note_player & p) {\n";
    for( const char * p = s; state >= 0; p++ ){
       const char c = *p;
       switch(state ){
@@ -141,7 +141,7 @@ void rtttl_convert_string( const char *s ){
 			   
 				//change this pls
                //lsp.play( note{ frequency, duration } );
-			   COUT << "\t\tp.play(note{ " << frequency << ", " << duration << " } );\n";
+			   COUT << "\tp.play(note{ " << frequency << ", " << duration << " } );\n";
 			   
                // 2017-09-27 correction: 3, not 4
                state = 3;
