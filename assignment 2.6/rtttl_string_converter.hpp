@@ -1,0 +1,1 @@
+void rtttl_convert_string( const char *s );
