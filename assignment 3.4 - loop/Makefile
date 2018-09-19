@@ -9,7 +9,7 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := uart_print_char.asm add_one_to_int.asm
+SOURCES := print_asciz.asm application.asm convert_upper_lower_char.asm run_it_down.asm
 
 # header files in this project
 HEADERS := 
